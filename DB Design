@@ -25,3 +25,23 @@ relation = [ (attribute1, att2, att...) => entity ] in each row / the connection
  create
  update
  join
+
+database schemas/ database design
+  -conceptual     ^   general/ brainstorming      | sale | -------> | customer | sale depends on customer / ER diagram
+                  |
+  -logical        |                               ==========================
+                  |                              |            sale          |\
+                  |                              ============================ ------
+                  |                              | date | price | etc1 | .. |/     |
+                  |                              ----------------------------      ---
+                  |                              |     .......              |       |
+                  |                              ----------------------------       |
+                  |                                                                 |
+                  |                               ==========================        |
+                  |                              |          customer        |       O
+                  |                              ============================       |
+                  |                              | name | date | etc1 | ..  |--------
+                  |                              ----------------------------
+                  |                              |     .......              |
+                  |                              ----------------------------
+  -physical       v   specific
