@@ -5,18 +5,23 @@ relation = [ (attribute1, att2, att...) => entity ] in each row / the connection
 (collumns in a table/ the attributes that we need to store about that entity) and the values that the entity has
 
 --------------------------------------------------------------------------------------------------------------------------------------
-  column    col       col                                Entity Type / Table Name : USER
+  column    col       col              Entity Type / Table Name / Catagory : USER
   ============================
-  name | username | password |   [1]                     relation = caeb's username is caeb001 /
+  name | username | password |   [1] : Attribute Type            relation = caeb's username is caeb001 /
   ============================                                      the username 'caeb001' has the password of 'pie123' 
-  caeb | caeb001  | pie123   |   row/entity   [2]          -------
-  ----------------------------                             | @@@ |    entity[0]
-  .... | .....    | ....     |   row/entity     <====>     |caeb |
-                                                           -------     
+  caeb | caeb001  | pie123   |   row/entity/tuple   [2]          -------
+  ----------------------------                                   | @@@ |    entity[0]
+  .... | .....    | ....     |   row/entity/tuple     <====>     |caeb |
+                                                                 -------     
   
   #@ we have an entity[0] => we want to store [name, username, password][1] about that entity => we enter specific value for each one of 
   these [attributes][2] => to form the [relation][1] btween these [attributes][2] and the entity[0]
  
  ----------------------------------------------------------------------------------------------------------------------------------------
- 
- 
+ rdbms
+ view = select only the cols that we're interested or need to know about / not everyone wants to know all those infos that are stored in DB
+ / we need to restrict a portion of DB for a specific guy to access
+ sql = define the structure [ddl : data defination language] /manipulate the data within [dml : data manipulated language]
+ create
+ update
+ join
