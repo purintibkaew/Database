@@ -1,0 +1,22 @@
+database = where we store the data
+entity = something we store the data about
+attribute = the infos that we store according to each entity
+relation = [ (attribute1, att2, att...) => entity ] in each row / the connection between the designed attributes of a table 
+(collumns in a table/ the attributes that we need to store about that entity) and the values that the entity has
+
+--------------------------------------------------------------------------------------------------------------------------------------
+  column    col       col                                Entity Type / Table Name : USER
+  ============================
+  name | username | password |   [1]                     relation = caeb's username is caeb001 /
+  ============================                                      the username 'caeb001' has the password of 'pie123' 
+  caeb | caeb001  | pie123   |   row/entity   [2]          -------
+  ----------------------------                             | @@@ |    entity[0]
+  .... | .....    | ....     |   row/entity     <====>     |caeb |
+                                                           -------     
+  
+  #@ we have an entity[0] => we want to store [name, username, password][1] about that entity => we enter specific value for each one of 
+  these [attributes][2] => to form the [relation][1] btween these [attributes][2] and the entity[0]
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
