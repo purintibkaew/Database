@@ -47,7 +47,7 @@ database schemas/ database design
   -physical       v   specific
 
 parent <-- child   parent[pk] is needed to be exist before we can create child[fk] / if parent is removed, then chils has to be removed
-            (fk)   aswell
+  m      one(fk)   aswell
 anomalies
 integrity - was implemented to prevent anomalies
           entity[uniqueness], referential[pk<removed> <=> fk<also removed> : they are linked], domain[has all expected values]
